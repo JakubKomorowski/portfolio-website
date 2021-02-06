@@ -14,7 +14,7 @@ export const initialDraggableList = [
     defaultPositionSmall: { x: 400, y: 300 },
     minimalizeStatus: false,
     projectImage: projectImage2,
-    buttonLive: "https://testtest222.netlify.app/",
+    buttonLive: "https://kite-shop-react-app.netlify.app/",
     buttonGithub: "https://github.com/JakubKomorowski?tab=repositories",
   },
   {
@@ -29,7 +29,7 @@ export const initialDraggableList = [
     defaultPositionSmall: { x: 100, y: -300 },
     minimalizeStatus: false,
     projectImage: projectImage2,
-    buttonLive: "https://testtest222.netlify.app/",
+    buttonLive: "https://kite-shop-react-app.netlify.app/",
     buttonGithub: "https://github.com/JakubKomorowski?tab=repositories",
   },
   {
@@ -44,7 +44,7 @@ export const initialDraggableList = [
     defaultPositionSmall: { x: 200, y: -770 },
     minimalizeStatus: false,
     projectImage: projectImage2,
-    buttonLive: "https://testtest222.netlify.app/",
+    buttonLive: "https://kite-shop-react-app.netlify.app/",
     buttonGithub: "https://github.com/JakubKomorowski?tab=repositories",
   },
 ];
