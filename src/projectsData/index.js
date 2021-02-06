@@ -1,0 +1,51 @@
+import projectImage1 from "../assets/images/project_1.PNG";
+import projectImage2 from "../assets/images/kite-shop-image.PNG";
+
+export const initialDraggableList = [
+  {
+    id: 1,
+    status: false,
+    zIndex: 1000,
+    projectName: "Kite Shop",
+    bounds: { left: 0, top: 0, right: 985, bottom: 386 },
+    boundsMedium: { left: 0, top: 0, right: 785, bottom: 386 },
+    boundsSmall: { left: 0, top: 0, right: 535, bottom: 386 },
+    defaultPosition: { x: 400, y: 300 },
+    defaultPositionSmall: { x: 400, y: 300 },
+    minimalizeStatus: false,
+    projectImage: projectImage2,
+    buttonLive: "https://testtest222.netlify.app/",
+    buttonGithub: "https://github.com/JakubKomorowski?tab=repositories",
+  },
+  {
+    id: 2,
+    status: false,
+    zIndex: 1000,
+    projectName: "Admin Panel",
+    bounds: { left: 0, top: -400, right: 985, bottom: -14 },
+    boundsMedium: { left: 0, top: -400, right: 785, bottom: -14 },
+    boundsSmall: { left: 0, top: -400, right: 535, bottom: -14 },
+    defaultPosition: { x: 600, y: -300 },
+    defaultPositionSmall: { x: 100, y: -300 },
+    minimalizeStatus: false,
+    projectImage: projectImage2,
+    buttonLive: "https://testtest222.netlify.app/",
+    buttonGithub: "https://github.com/JakubKomorowski?tab=repositories",
+  },
+  {
+    id: 3,
+    status: false,
+    zIndex: 1000,
+    projectName: "Dome Houses",
+    bounds: { left: 0, top: -800, right: 985, bottom: -414 },
+    boundsMedium: { left: 0, top: -800, right: 785, bottom: -414 },
+    boundsSmall: { left: 0, top: -800, right: 535, bottom: -414 },
+    defaultPosition: { x: 200, y: -770 },
+    defaultPositionSmall: { x: 200, y: -770 },
+    minimalizeStatus: false,
+    projectImage: projectImage2,
+    buttonLive: "https://testtest222.netlify.app/",
+    buttonGithub: "https://github.com/JakubKomorowski?tab=repositories",
+  },
+];
+//"https://streamable.com/ovq75h"
