@@ -4,7 +4,7 @@ import Modal from "@material-ui/core/Modal";
 import Backdrop from "@material-ui/core/Backdrop";
 import Fade from "@material-ui/core/Fade";
 import Context from "../context";
-import ReactPlayer from "react-player";
+import styled from "styled-components";
 
 const useStyles = makeStyles((theme) => ({
   modal: {
@@ -14,13 +14,20 @@ const useStyles = makeStyles((theme) => ({
   },
   paper: {
     backgroundColor: theme.palette.background.paper,
-    // border: "4px solid #000",
+
     border: "none",
     outline: "none",
     boxShadow: theme.shadows[5],
     padding: theme.spacing(0, 0, 0),
   },
 }));
+
+const IFrameWrapper = styled.div`
+  max-width: 90% !important;
+  iframe {
+    max-width: 100% !important;
+  }
+`;
 
 const ProjectsLiveModal = () => {
   const classes = useStyles();
@@ -47,12 +54,7 @@ const ProjectsLiveModal = () => {
         }}
       >
         <Fade in={openProjectsLiveModal}>
-          <div className={classes.paper}>
-            {/* <ReactPlayer
-              width="900px"
-              height="455px"
-              url={selectedProject.buttonLive}
-            /> */}
+          <IFrameWrapper className={classes.paper}>
             <iframe
               name="test"
               title="test"
@@ -60,7 +62,7 @@ const ProjectsLiveModal = () => {
               width="1500"
               height="800"
             ></iframe>
-          </div>
+          </IFrameWrapper>
         </Fade>
       </Modal>
     </div>
