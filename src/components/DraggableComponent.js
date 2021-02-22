@@ -17,6 +17,7 @@ import {
   ButtonsWrapper,
   StyledMaximalizeBox,
   StyledWindowWrapper,
+  EmptyButton,
 } from "./styledComponents/StyledWindow";
 import Button from "./atoms/Button";
 import { CgMaximizeAlt } from "react-icons/cg";
@@ -55,6 +56,7 @@ const DraggableComponent = () => {
           buttonGithub,
           buttonLive,
           defaultPositionSmall,
+          wordpress,
         } = item;
         return (
           <>
@@ -121,9 +123,13 @@ const DraggableComponent = () => {
                     <StyledContent onClick={() => onTop(id)}>
                       <StyledProjectImg src={projectImage} alt="" />
                       <ButtonsWrapper>
-                        <a href={buttonGithub} target="_blank">
-                          <Button>Github</Button>
-                        </a>
+                        {wordpress ? (
+                          <EmptyButton></EmptyButton>
+                        ) : (
+                          <a href={buttonGithub} target="_blank">
+                            <Button>Github</Button>
+                          </a>
+                        )}
                         <a href={buttonLive} target="_blank">
                           <Button>Live</Button>
                         </a>
@@ -143,10 +149,17 @@ const DraggableComponent = () => {
                   <StyledProjectImg src={projectImage} alt="" />
 
                   <ButtonsWrapper>
-                    <a href={buttonGithub}>
+                    {wordpress ? (
+                      <EmptyButton></EmptyButton>
+                    ) : (
+                      <a href={buttonGithub} target="_blank">
+                        <Button projects>Github</Button>
+                      </a>
+                    )}
+                    {/* <a href={buttonGithub}>
                       <Button projects>Github</Button>
-                    </a>
-                    <a href={buttonLive}>
+                    </a> */}
+                    <a href={buttonLive} target="_blank">
                       <Button projects>Live</Button>
                     </a>
                   </ButtonsWrapper>
