@@ -14,6 +14,7 @@ import {
   SiStyledComponents,
   SiFirebase,
   SiAdobeillustrator,
+  SiGithub,
 } from "react-icons/si";
 import { AiFillHtml5, AiFillDatabase } from "react-icons/ai";
 import { DiCss3 } from "react-icons/di";
@@ -70,7 +71,8 @@ const DraggableIcon = () => {
     { i: "Wordpress", x: 11, y: 0, w: 1, h: 1 },
     { i: "Firebase", x: 7, y: 3, w: 1, h: 1 },
     { i: "SEO", x: 6, y: 4, w: 1, h: 1 },
-    { i: "Illustrator", x: 4, y: 4, w: 1, h: 1 },
+    { i: "Git", x: 4, y: 4, w: 1, h: 1 },
+    { i: "Illustrator", x: 11, y: 3, w: 1, h: 1 },
     { i: "rest-api", x: 8, y: 1, w: 1, h: 1 },
     { i: "Contentful", x: 11, y: 1, w: 1, h: 1 },
     { i: "Sourcetree", x: 11, y: 2, w: 1, h: 1 },
@@ -89,7 +91,8 @@ const DraggableIcon = () => {
     { i: "Wordpress", x: 7, y: 4, w: 1, h: 1 },
     { i: "Firebase", x: 5, y: 3, w: 1, h: 1 },
     { i: "SEO", x: 4, y: 4, w: 1, h: 1 },
-    { i: "Illustrator", x: 2, y: 4, w: 1, h: 1 },
+    { i: "Git", x: 2, y: 4, w: 1, h: 1 },
+    { i: "Illustrator", x: 7, y: 2, w: 1, h: 1 },
     { i: "rest-api", x: 6, y: 1, w: 1, h: 1 },
     { i: "Contentful", x: 7, y: 5, w: 1, h: 1 },
     { i: "Sourcetree", x: 7, y: 3, w: 1, h: 1 },
@@ -185,6 +188,10 @@ const DraggableIcon = () => {
             <FaSourcetree size={70} />
             <IconName>Sourcetree</IconName>
           </IconWrapper>
+          <IconWrapper key="Git">
+            <SiGithub size={70} />
+            <IconName>Git</IconName>
+          </IconWrapper>
         </GridLayout>
       ) : (
         <IconsWrapper>
@@ -263,6 +270,10 @@ const DraggableIcon = () => {
           <IconWrapper key="Sourcetree">
             <FaSourcetree size={70} />
             <IconName>Sourcetree</IconName>
+          </IconWrapper>
+          <IconWrapper key="Git">
+            <SiGithub size={70} />
+            <IconName>Git</IconName>
           </IconWrapper>
         </IconsWrapper>
       )}
