@@ -114,7 +114,7 @@ export const StyledName = styled.p`
 export const StyledBarContentWrapper = styled.div`
   width: 100%;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 2fr 1fr;
   align-items: center;
   @media (max-width: 1100px) {
     display: flex;
@@ -130,6 +130,10 @@ export const StyledProjectImg = styled.img`
   height: 230px;
   object-fit: cover;
   width: 100%;
+`;
+
+export const EmptyButton = styled.div`
+  width: 130px;
 `;
 
 export const ButtonsWrapper = styled.div`
