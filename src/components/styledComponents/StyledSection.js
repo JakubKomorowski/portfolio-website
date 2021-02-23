@@ -2,7 +2,8 @@ import styled, { css } from "styled-components";
 
 export const ProjectWrapper = styled.section`
   height: 1200px;
-  background-color: ${({ white }) => (white ? "white" : "#E5E5E5")};
+  background-color: ${({ white }) =>
+    white ? "white" : ({ theme }) => theme.bgGray};
   display: flex;
   align-items: center;
   position: relative;

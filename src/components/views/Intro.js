@@ -28,7 +28,6 @@ const Wrapper = styled.div`
     align-items: flex-start;
 
     padding-top: 10rem;
-    /* margin-bottom: 2rem; */
     height: 100vh;
   }
   @media (max-width: 400px) {
@@ -36,7 +35,6 @@ const Wrapper = styled.div`
     width: auto;
     align-items: flex-start;
     padding-top: 8rem;
-    /* margin-bottom: 2rem; */
     height: 100vh;
   }
 `;
@@ -55,9 +53,7 @@ const ProgrammerImgWrapper = styled.div`
 
 const ProgrammerImg = styled(motion.img)`
   height: 500px;
-  /* @media (min-width: 2200px) {
-    height: 600px;
-  } */
+
   @media (max-width: 1350px) {
     height: 400px;
   }
@@ -70,10 +66,7 @@ const StyledEyesWrapper = styled.div`
   position: absolute;
   left: 400px;
   top: 110px;
-  /* @media (min-width: 2200px) {
-    left: 484px;
-    top: 130px;
-  } */
+
   @media (max-width: 1350px) {
     left: 320px;
     top: 90px;
@@ -93,10 +86,7 @@ const StyledEyesWrapper = styled.div`
     margin-left: -8px;
     position: relative;
     z-index: 10;
-    /* @media (min-width: 2200px) {
-      width: 90px;
-      height: 90px;
-    } */
+
     @media (max-width: 1350px) {
       width: 65px;
       height: 65px;
