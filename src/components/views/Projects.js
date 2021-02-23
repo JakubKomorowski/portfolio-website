@@ -8,7 +8,6 @@ import {
   ProjectWrapper,
   WindowWrapper,
   ProjectLabel,
-  LabelWrapper,
 } from "../styledComponents/StyledSection";
 import ProjectsLiveModal from "../ProjectsLiveModal";
 

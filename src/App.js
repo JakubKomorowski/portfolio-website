@@ -2,13 +2,14 @@ import React, { useState, useEffect } from "react";
 import Intro from "./components/views/Intro";
 import Projects from "./components//views/Projects";
 import GlobalStyle from "./theme/GlobalStyle";
-import styled from "styled-components";
+import styled, { ThemeProvider } from "styled-components";
 import Context from "./context";
 import { initialDraggableList } from "./projectsData";
 import Skills from "./components/views/Skills";
 import Navbar from "./components/nav/Navbar";
 import Contact from "./components/views/Contact";
 import Footer from "./components/nav/Footer";
+import { theme } from "./theme/theme";
 
 const Wrapper = styled.div`
   overflow-x: hidden;
@@ -170,12 +171,14 @@ const App = () => {
     >
       <Wrapper>
         <GlobalStyle />
-        <Navbar />
-        <Intro />
-        <Projects />
-        <Skills />
-        <Contact />
-        <Footer />
+        <ThemeProvider theme={theme}>
+          <Navbar />
+          <Intro />
+          <Projects />
+          <Skills />
+          <Contact />
+          <Footer />
+        </ThemeProvider>
       </Wrapper>
     </Context.Provider>
   );

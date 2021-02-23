@@ -3,7 +3,7 @@ import styled, { css } from "styled-components";
 
 const StyledButton = styled.button`
   padding: 0.5em 2em;
-  background-color: #e5e5e5;
+  background-color: ${({ theme }) => theme.bgGray};
   border: 3px solid black;
   font-size: 1.1rem;
   font-family: "Fira Code", monospace;
@@ -11,7 +11,7 @@ const StyledButton = styled.button`
   font-weight: 700;
 
   &:hover {
-    background-color: #c4c4c4;
+    background-color: ${({ theme }) => theme.hoverGray};
   }
   a {
     color: black;

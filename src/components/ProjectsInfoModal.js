@@ -4,7 +4,7 @@ import Modal from "@material-ui/core/Modal";
 import Backdrop from "@material-ui/core/Backdrop";
 import Fade from "@material-ui/core/Fade";
 import Context from "../context";
-import styled, { css } from "styled-components";
+import styled from "styled-components";
 
 const useStyles = makeStyles((theme) => ({
   modal: {
@@ -19,6 +19,8 @@ const useStyles = makeStyles((theme) => ({
     padding: theme.spacing(2, 4, 3),
     width: "1000px",
     maxWidth: "90%",
+    overflowY: "auto",
+    outline: "none",
   },
 }));
 
@@ -57,7 +59,7 @@ const ProjectsInfoModal = () => {
   `;
 
   const StyledStackItem = styled.p`
-    background-color: #e5e5e5;
+    background-color: ${({ theme }) => theme.bgGray};
     padding: 0.2rem;
     display: flex;
     align-items: center;
