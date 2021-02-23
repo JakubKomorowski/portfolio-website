@@ -25,7 +25,7 @@ export const StyledBar = styled.div`
   border-top: 6px solid black;
   display: flex;
   align-items: center;
-  background-color: #e5e5e5;
+  background-color: ${({ theme }) => theme.bgGray};
   z-index: 10;
   position: relative;
   cursor: grab;
@@ -73,6 +73,7 @@ export const StyledQuestionMarkBox = styled.button`
   background-color: white;
   justify-self: end;
   font-family: "Fira Code", monospace;
+  outline: none;
 `;
 
 export const StyledMaximalizeBox = styled.button`
@@ -109,17 +110,16 @@ export const StyledName = styled.p`
   justify-self: center;
   font-size: 1.2rem;
   font-weight: 700;
+  @media (max-width: 600px) {
+    font-size: 1rem;
+  }
 `;
 
 export const StyledBarContentWrapper = styled.div`
   width: 100%;
   display: grid;
-  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-columns: 1fr 3fr 1fr;
   align-items: center;
-  @media (max-width: 1100px) {
-    display: flex;
-    justify-content: center;
-  }
 `;
 
 export const StyledButtonsWrapper = styled.div`

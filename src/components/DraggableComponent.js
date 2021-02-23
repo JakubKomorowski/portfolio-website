@@ -142,7 +142,16 @@ const DraggableComponent = () => {
               <StyledWindowWrapper>
                 <StyledBar>
                   <StyledBarContentWrapper>
+                    <div></div>
                     <StyledName>{projectName}</StyledName>
+                    <StyledQuestionMarkBox
+                      onClick={() => {
+                        selectProject(id);
+                        handleProjectsInfoModalOpen();
+                      }}
+                    >
+                      <StyledQuestionMark>?</StyledQuestionMark>
+                    </StyledQuestionMarkBox>
                   </StyledBarContentWrapper>
                 </StyledBar>
                 <StyledContent>
@@ -156,9 +165,7 @@ const DraggableComponent = () => {
                         <Button projects>Github</Button>
                       </a>
                     )}
-                    {/* <a href={buttonGithub}>
-                      <Button projects>Github</Button>
-                    </a> */}
+
                     <a href={buttonLive} target="_blank">
                       <Button projects>Live</Button>
                     </a>
