@@ -24,8 +24,10 @@ const useStyles = makeStyles((theme) => ({
 
 const IFrameWrapper = styled.div`
   max-width: 90% !important;
+
   iframe {
     max-width: 100% !important;
+    max-height: 90vh;
   }
 `;
 
@@ -61,6 +63,7 @@ const ProjectsLiveModal = () => {
               src={selectedProject.buttonLive}
               width="1500"
               height="800"
+              maxHeight="100vh"
             ></iframe>
           </IFrameWrapper>
         </Fade>
