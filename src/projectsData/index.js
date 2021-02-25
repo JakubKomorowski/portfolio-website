@@ -9,7 +9,6 @@ export const initialDraggableList = [
     status: false,
     zIndex: 1000,
     projectName: "Kitchen Dock",
-
     bounds: { left: 0, top: 0, right: 985, bottom: 386 },
     boundsMedium: { left: 0, top: 0, right: 785, bottom: 386 },
     boundsSmall: { left: 0, top: 0, right: 535, bottom: 386 },
@@ -22,6 +21,7 @@ export const initialDraggableList = [
     buttonGithub: "",
     description:
       "My newest commercial WordPress website. For this project, I created a custom plugin to display products in the specific way.",
+    skills: ["Wordpress", "SEO/SEM"],
   },
   {
     id: 2,
@@ -40,6 +40,7 @@ export const initialDraggableList = [
     buttonGithub: "",
     description:
       "My biggest commercial WordPress website that I've ranked on Google. This project is 3 years old. During the first two years, I was focused on gaining knowledge about SEO and converting it into action.",
+    skills: ["Wordpress", "SEO/SEM"],
   },
   {
     id: 3,
@@ -58,17 +59,16 @@ export const initialDraggableList = [
     buttonGithub: "https://github.com/JakubKomorowski/kite_shop_react_app",
     description:
       "It's a project of a fictional online kitesurfing shop. Among the others, this application contains the functionality of sorting, filtering, searching, and adding products to the cart. It’s based on Context Api and Contentful Api. It is styled using Styled-Components and Material-UI. Thanks to this project, I immersed myself in React and learned styled-components.",
-    kiteShop: true,
-    // kiteShop: [
-    //   "React",
-    //   "React-Router-Dom",
-    //   "Context API",
-    //   "Contentful CMS",
-    //   "Styled-Components",
-    //   "Formik",
-    //   "Yup",
-    //   "Material-UI",
-    // ],
+    skills: [
+      "React",
+      "React-Router-Dom",
+      "Context API",
+      "Contentful CMS",
+      "Styled-Components",
+      "Formik",
+      "Yup",
+      "Material-UI",
+    ],
   },
   {
     id: 4,
@@ -88,6 +88,13 @@ export const initialDraggableList = [
     description:
       "Fictional admin panel application that enables users to add and track client's orders. Users can set the delivery date, check if the order is paid and also add, edit and remove products from each order. It’s based on React Redux and Firebase. This project helped me to strengthen my Redux and Material-UI skills.",
     adminPanel: true,
+    skills: [
+      "React",
+      "React-Router-Dom",
+      "Redux",
+      "Firebase",
+      "Styled-Components",
+      "Material-UI",
+    ],
   },
 ];
-//"https://streamable.com/ovq75h"

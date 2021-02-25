@@ -19,6 +19,7 @@ const useStyles = makeStyles((theme) => ({
     padding: theme.spacing(2, 4, 3),
     width: "1000px",
     maxWidth: "90%",
+    maxHeight: "90%",
     overflowY: "auto",
     outline: "none",
   },
@@ -34,13 +35,7 @@ const ProjectsInfoModal = () => {
     selectedProject,
   } = value;
 
-  const {
-    projectName,
-    description,
-    kiteShop,
-    adminPanel,
-    wordpress,
-  } = selectedProject;
+  const { projectName, description, skills } = selectedProject;
 
   const StyledH2 = styled.h2`
     margin-bottom: 10px;
@@ -53,7 +48,6 @@ const ProjectsInfoModal = () => {
   const StyledStackWrapper = styled.div`
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-    /* display: flex; */
     grid-gap: 10px;
     max-width: 700px;
   `;
@@ -92,34 +86,9 @@ const ProjectsInfoModal = () => {
             <p id="transition-modal-description">{description}</p>
             <StyledH3>Technologies</StyledH3>
             <StyledStackWrapper>
-              {kiteShop ? (
-                <>
-                  <StyledStackItem>React</StyledStackItem>
-                  <StyledStackItem>React-Router-Dom</StyledStackItem>
-                  <StyledStackItem>Context API</StyledStackItem>
-                  <StyledStackItem>Contentful CMS</StyledStackItem>
-                  <StyledStackItem>Styled-Components</StyledStackItem>
-                  <StyledStackItem>Formik</StyledStackItem>
-                  <StyledStackItem>Yup</StyledStackItem>
-                  <StyledStackItem>Material-UI</StyledStackItem>
-                </>
-              ) : adminPanel ? (
-                <>
-                  <StyledStackItem>React</StyledStackItem>
-                  <StyledStackItem>React-Router-Dom</StyledStackItem>
-                  <StyledStackItem>Redux</StyledStackItem>
-                  <StyledStackItem>Firebase</StyledStackItem>
-                  <StyledStackItem>Styled-Components</StyledStackItem>
-                  <StyledStackItem>Material-UI</StyledStackItem>
-                </>
-              ) : wordpress ? (
-                <>
-                  <StyledStackItem>Wordpress</StyledStackItem>
-                  <StyledStackItem>SEO/SEM</StyledStackItem>
-                </>
-              ) : (
-                ""
-              )}
+              {skills.map((el) => {
+                return <StyledStackItem>{el}</StyledStackItem>;
+              })}
             </StyledStackWrapper>
           </div>
         </Fade>

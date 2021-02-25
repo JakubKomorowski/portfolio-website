@@ -21,7 +21,9 @@ const App = () => {
   const [openProjectsInfoModal, setOpenProjectsInfoModal] = useState(false);
   const [openProjectsLiveModal, setOpenProjectsLiveModal] = useState(false);
   const [openMessageSentModal, setOpenMessageSentModal] = useState(false);
-  const [selectedProject, setSelectedProject] = useState({});
+  const [selectedProject, setSelectedProject] = useState({
+    skills: [],
+  });
   const [windowSize, setWindowSize] = useState(window.innerWidth);
 
   const updateWindowWidth = () => {
