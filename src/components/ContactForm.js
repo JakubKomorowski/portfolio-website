@@ -24,31 +24,7 @@ const contactFormSchema = Yup.object().shape({
 // emailjs
 const ContactForm = () => {
   const value = useContext(Context);
-  const { handleMessageSentModalOpen, showAndCloseMessageSentModal } = value;
-
-  const handleEmailSend = (e) => {
-    e.preventDefault();
-
-    emailjs
-      .sendForm(
-        process.env.REACT_APP_SERVICE_ID,
-        process.env.REACT_APP_TEMPLATE_ID,
-        e.target,
-        process.env.REACT_APP_USER_ID
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-          if (result.text === "OK") {
-            showAndCloseMessageSentModal();
-          }
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
-    e.target.reset();
-  };
+  const { showAndCloseMessageSentModal } = value;
 
   return (
     <StyledWrapper>
@@ -59,35 +35,42 @@ const ContactForm = () => {
           name: "",
         }}
         validationSchema={contactFormSchema}
-        onSubmit={(values) => {
+        onSubmit={(values, { resetForm }) => {
           console.log(values);
 
-          values.email = "";
-          values.message = "";
-          values.name = "";
+          emailjs
+            .send(
+              process.env.REACT_APP_SERVICE_ID,
+              process.env.REACT_APP_TEMPLATE_ID,
+              values,
+              process.env.REACT_APP_USER_ID
+            )
+            .then(
+              (result) => {
+                console.log(result.text);
+                if (result.text === "OK") {
+                  showAndCloseMessageSentModal();
+                }
+              },
+              (error) => {
+                console.log(error.text);
+              }
+            );
+
+          resetForm();
         }}
       >
         {({ values }) => (
-          <StyledFormik onSubmit={handleEmailSend}>
+          <StyledFormik>
             <StyledFieldWrapper>
               <label htmlFor="name">Name</label>
-              <StyledField
-                name="name"
-                type="text"
-                value={values.name}
-                required
-              />
+              <StyledField name="name" type="text" value={values.name} />
               <ErrorMessage name="name" />
             </StyledFieldWrapper>
 
             <StyledFieldWrapper>
               <label htmlFor="email">Email</label>
-              <StyledField
-                name="email"
-                type="email"
-                value={values.email}
-                required
-              />
+              <StyledField name="email" type="email" value={values.email} />
             </StyledFieldWrapper>
             <ErrorMessage name="email" />
             <StyledFieldWrapper>
@@ -97,7 +80,6 @@ const ContactForm = () => {
                 type="text"
                 value={values.message}
                 component="textarea"
-                required
               />
             </StyledFieldWrapper>
             <ErrorMessage name="message" />
