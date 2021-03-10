@@ -21,7 +21,6 @@ import {
 } from "./styledComponents/StyledWindow";
 import Button from "./atoms/Button";
 import { CgMaximizeAlt } from "react-icons/cg";
-import { FiMaximize2 } from "react-icons/fi";
 
 const DraggableComponent = () => {
   const value = useContext(Context);
