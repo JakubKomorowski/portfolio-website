@@ -22,17 +22,9 @@ const GlobalStyle = createGlobalStyle`
     border: 3px solid black;
    
 }
-/* @media (max-width: 700px){
-    ::-webkit-scrollbar{
-        width: 0.5vw;
-    min-width: 1px;
-    
-}
-} */
 }
 
 body{
-    /* font-family: 'IBM Plex Mono', monospace; */
     font-family: 'Fira Code', monospace;
 }
 
