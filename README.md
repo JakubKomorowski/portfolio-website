@@ -9,9 +9,9 @@ from the past.
 
 ## Main Tech stack:
 
-React.js,
-React Context API,
-Styled-Components,
+- React.js,
+- React Context API,
+- Styled-Components,
 
 ## Getting started:
 
