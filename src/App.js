@@ -24,6 +24,7 @@ const App = () => {
   const [selectedProject, setSelectedProject] = useState({
     skills: [],
   });
+
   const [windowSize, setWindowSize] = useState(window.innerWidth);
 
   const updateWindowWidth = () => {
