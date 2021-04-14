@@ -55,7 +55,7 @@ const GridLayout = WidthProvider(RGL);
 
 const DraggableIcon = () => {
   const value = useContext(Context);
-  const { windowSize, breakPointBig, breakPointSmall, breakPoint } = value;
+  const { windowSize, breakPointBig, breakPointSmall } = value;
 
   const layout = [
     { i: "JS", x: 4, y: 0, w: 1, h: 1 },

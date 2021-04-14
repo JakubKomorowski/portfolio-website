@@ -60,7 +60,11 @@ const Projects = () => {
         <DraggableComponent />
         <BottomBar>
           <MinimalizedWindowWrapper>
-            <a href="https://github.com/JakubKomorowski" target="_blank">
+            <a
+              href="https://github.com/JakubKomorowski"
+              target="_blank"
+              rel="noreferrer"
+            >
               <SiGithub size={35} />
             </a>
             {minimalize.map((el) => {

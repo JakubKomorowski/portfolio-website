@@ -125,11 +125,15 @@ const DraggableComponent = () => {
                         {wordpress ? (
                           <EmptyButton></EmptyButton>
                         ) : (
-                          <a href={buttonGithub} target="_blank">
+                          <a
+                            href={buttonGithub}
+                            target="_blank"
+                            rel="noreferrer"
+                          >
                             <Button>Github</Button>
                           </a>
                         )}
-                        <a href={buttonLive} target="_blank">
+                        <a href={buttonLive} target="_blank" rel="noreferrer">
                           <Button>Live</Button>
                         </a>
                       </ButtonsWrapper>
@@ -160,12 +164,12 @@ const DraggableComponent = () => {
                     {wordpress ? (
                       <EmptyButton></EmptyButton>
                     ) : (
-                      <a href={buttonGithub} target="_blank">
+                      <a href={buttonGithub} target="_blank" rel="noreferrer">
                         <Button projects>Github</Button>
                       </a>
                     )}
 
-                    <a href={buttonLive} target="_blank">
+                    <a href={buttonLive} target="_blank" rel="noreferrer">
                       <Button projects>Live</Button>
                     </a>
                   </ButtonsWrapper>
