@@ -2,6 +2,7 @@ import huntingImg from "../assets/images/hunting.PNG";
 import kiteShopImg from "../assets/images/kite-shop-image.PNG";
 import adminImg from "../assets/images/admin.PNG";
 import kitchenImg from "../assets/images/kitchen.PNG";
+import arqImg from "../assets/images/ARQProjekt.PNG";
 
 export const initialDraggableList = [
   {
@@ -12,8 +13,8 @@ export const initialDraggableList = [
     bounds: { left: 0, top: 0, right: 985, bottom: 386 },
     boundsMedium: { left: 0, top: 0, right: 785, bottom: 386 },
     boundsSmall: { left: 0, top: 0, right: 535, bottom: 386 },
-    defaultPosition: { x: 400, y: 300 },
-    defaultPositionSmall: { x: 400, y: 300 },
+    defaultPosition: { x: 50, y: 50 },
+    defaultPositionSmall: { x: 50, y: 50 },
     minimalizeStatus: false,
     projectImage: kitchenImg,
     wordpress: true,
@@ -31,8 +32,8 @@ export const initialDraggableList = [
     bounds: { left: 0, top: -400, right: 985, bottom: -14 },
     boundsMedium: { left: 0, top: -400, right: 785, bottom: -14 },
     boundsSmall: { left: 0, top: -400, right: 535, bottom: -14 },
-    defaultPosition: { x: 600, y: -300 },
-    defaultPositionSmall: { x: 100, y: -300 },
+    defaultPosition: { x: 100, y: -295 },
+    defaultPositionSmall: { x: 100, y: -295 },
     minimalizeStatus: false,
     projectImage: huntingImg,
     wordpress: true,
@@ -50,8 +51,8 @@ export const initialDraggableList = [
     bounds: { left: 0, top: -800, right: 985, bottom: -414 },
     boundsMedium: { left: 0, top: -800, right: 785, bottom: -414 },
     boundsSmall: { left: 0, top: -800, right: 535, bottom: -414 },
-    defaultPosition: { x: 200, y: -770 },
-    defaultPositionSmall: { x: 200, y: -770 },
+    defaultPosition: { x: 150, y: -640 },
+    defaultPositionSmall: { x: 150, y: -640 },
     minimalizeStatus: false,
     projectImage: kiteShopImg,
     wordpress: false,
@@ -78,8 +79,8 @@ export const initialDraggableList = [
     bounds: { left: 0, top: -1200, right: 985, bottom: -814 },
     boundsMedium: { left: 0, top: -1200, right: 785, bottom: -814 },
     boundsSmall: { left: 0, top: -1200, right: 535, bottom: -814 },
-    defaultPosition: { x: 750, y: -970 },
-    defaultPositionSmall: { x: 300, y: -970 },
+    defaultPosition: { x: 200, y: -985 },
+    defaultPositionSmall: { x: 200, y: -985 },
     minimalizeStatus: false,
     projectImage: adminImg,
     wordpress: false,
@@ -96,5 +97,25 @@ export const initialDraggableList = [
       "Styled-Components",
       "Material-UI",
     ],
+  },
+  {
+    id: 5,
+    status: false,
+    zIndex: 1000,
+    projectName: "ARQ Projekt",
+    bounds: { left: 0, top: -1600, right: 985, bottom: -1214 },
+    boundsMedium: { left: 0, top: -1600, right: 785, bottom: -1214 },
+    boundsSmall: { left: 0, top: -1600, right: 535, bottom: -1214 },
+    defaultPosition: { x: 250, y: -1330 },
+    defaultPositionSmall: { x: 250, y: -1330 },
+    minimalizeStatus: false,
+    projectImage: arqImg,
+    wordpress: false,
+    buttonLive: "https://arqprojekt.pl/",
+    buttonGithub: "https://github.com/JakubKomorowski/arqprojekt-gatsby",
+    description:
+      "It is a commercial project built for the real-estate company. It's based on Gatsbyjs - an open-source frontend framework based on React. This framework is known for the good performance and SEO.",
+    adminPanel: true,
+    skills: ["Gatsby", "Styled-Components", "DatoCMS", "GraphQL"],
   },
 ];
