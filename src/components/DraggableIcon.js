@@ -15,14 +15,17 @@ import {
   SiFirebase,
   SiAdobeillustrator,
   SiGithub,
+  SiTypescript,
 } from "react-icons/si";
 import { AiFillHtml5, AiFillDatabase } from "react-icons/ai";
 import { DiCss3 } from "react-icons/di";
-import { FaWordpress, FaSourcetree } from "react-icons/fa";
+import { FaWordpress } from "react-icons/fa";
 import { BsGraphUp, BsFillGearFill } from "react-icons/bs";
 import "./styledComponents/icons.css";
 import { useContext } from "react";
 import Context from "../context";
+import { breakPointBig, breakPointSmall } from "../utils/windowBreakPoints";
+import { layout, layoutSmall } from "../utils/iconLayout";
 
 const IconWrapper = styled.div`
   display: flex;
@@ -55,48 +58,8 @@ const GridLayout = WidthProvider(RGL);
 
 const DraggableIcon = () => {
   const value = useContext(Context);
-  const { windowSize, breakPointBig, breakPointSmall } = value;
+  const { windowSize } = value;
 
-  const layout = [
-    { i: "JS", x: 4, y: 0, w: 1, h: 1 },
-    { i: "React", x: 5, y: 1, w: 1, h: 1 },
-    { i: "Redux", x: 6, y: 0, w: 1, h: 1 },
-    { i: "HTML", x: 3, y: 0, w: 1, h: 1 },
-    { i: "CSS", x: 2, y: 1, w: 1, h: 1 },
-    { i: "Gatsby", x: 7, y: 0, w: 1, h: 1 },
-    { i: "GraphQL", x: 8, y: 2, w: 1, h: 1 },
-    { i: "Material", x: 2, y: 2, w: 1, h: 1 },
-    { i: "Figma", x: 5, y: 5, w: 1, h: 1 },
-    { i: "styled-components", x: 3, y: 3, w: 1, h: 1 },
-    { i: "Wordpress", x: 11, y: 0, w: 1, h: 1 },
-    { i: "Firebase", x: 7, y: 3, w: 1, h: 1 },
-    { i: "SEO", x: 6, y: 4, w: 1, h: 1 },
-    { i: "Git", x: 4, y: 4, w: 1, h: 1 },
-    { i: "Illustrator", x: 11, y: 3, w: 1, h: 1 },
-    { i: "rest-api", x: 8, y: 1, w: 1, h: 1 },
-    { i: "Contentful", x: 11, y: 1, w: 1, h: 1 },
-    { i: "Sourcetree", x: 11, y: 2, w: 1, h: 1 },
-  ];
-  const layoutSmall = [
-    { i: "JS", x: 2, y: 0, w: 1, h: 1 },
-    { i: "React", x: 3, y: 1, w: 1, h: 1 },
-    { i: "Redux", x: 4, y: 0, w: 1, h: 1 },
-    { i: "HTML", x: 1, y: 0, w: 1, h: 1 },
-    { i: "CSS", x: 0, y: 1, w: 1, h: 1 },
-    { i: "Gatsby", x: 5, y: 0, w: 1, h: 1 },
-    { i: "GraphQL", x: 6, y: 2, w: 1, h: 1 },
-    { i: "Material", x: 0, y: 2, w: 1, h: 1 },
-    { i: "Figma", x: 3, y: 5, w: 1, h: 1 },
-    { i: "styled-components", x: 1, y: 3, w: 1, h: 1 },
-    { i: "Wordpress", x: 7, y: 4, w: 1, h: 1 },
-    { i: "Firebase", x: 5, y: 3, w: 1, h: 1 },
-    { i: "SEO", x: 4, y: 4, w: 1, h: 1 },
-    { i: "Git", x: 2, y: 4, w: 1, h: 1 },
-    { i: "Illustrator", x: 7, y: 2, w: 1, h: 1 },
-    { i: "rest-api", x: 6, y: 1, w: 1, h: 1 },
-    { i: "Contentful", x: 7, y: 5, w: 1, h: 1 },
-    { i: "Sourcetree", x: 7, y: 3, w: 1, h: 1 },
-  ];
   return (
     <>
       {windowSize > breakPointSmall ? (
@@ -184,9 +147,9 @@ const DraggableIcon = () => {
             <AiFillDatabase size={70} />
             <IconName>Contentful</IconName>
           </IconWrapper>
-          <IconWrapper key="Sourcetree">
-            <FaSourcetree size={70} />
-            <IconName>Sourcetree</IconName>
+          <IconWrapper key="Typescript">
+            <SiTypescript size={70} />
+            <IconName>TypeScript</IconName>
           </IconWrapper>
           <IconWrapper key="Git">
             <SiGithub size={70} />
@@ -267,9 +230,9 @@ const DraggableIcon = () => {
             <AiFillDatabase size={70} />
             <IconName>Contentful</IconName>
           </IconWrapper>
-          <IconWrapper key="Sourcetree">
-            <FaSourcetree size={70} />
-            <IconName>Sourcetree</IconName>
+          <IconWrapper key="Typescript">
+            <SiTypescript size={70} />
+            <IconName>Typescript</IconName>
           </IconWrapper>
           <IconWrapper key="Git">
             <SiGithub size={70} />

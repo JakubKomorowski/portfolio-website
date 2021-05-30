@@ -24,17 +24,11 @@ const App = () => {
   const [selectedProject, setSelectedProject] = useState({
     skills: [],
   });
-
   const [windowSize, setWindowSize] = useState(window.innerWidth);
 
   const updateWindowWidth = () => {
     setWindowSize(window.innerWidth);
   };
-
-  const breakPointBig = 1600;
-  const breakPoint = 1350;
-  const breakPointSmall = 1100;
-  const breakPointXS = 700;
 
   useEffect(() => {
     window.addEventListener("resize", updateWindowWidth);
@@ -166,10 +160,6 @@ const App = () => {
         openMessageSentModal,
         showAndCloseMessageSentModal,
         windowSize,
-        breakPoint,
-        breakPointBig,
-        breakPointSmall,
-        breakPointXS,
       }}
     >
       <Wrapper>

@@ -21,6 +21,11 @@ import {
 } from "./styledComponents/StyledWindow";
 import Button from "./atoms/Button";
 import { CgMaximizeAlt } from "react-icons/cg";
+import {
+  breakPoint,
+  breakPointBig,
+  breakPointSmall,
+} from "../utils/windowBreakPoints";
 
 const DraggableComponent = () => {
   const value = useContext(Context);
@@ -34,9 +39,6 @@ const DraggableComponent = () => {
     handleProjectsInfoModalOpen,
     handleProjectsLiveModalOpen,
     windowSize,
-    breakPoint,
-    breakPointBig,
-    breakPointSmall,
   } = value;
 
   return (
