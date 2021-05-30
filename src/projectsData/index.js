@@ -3,6 +3,7 @@ import kiteShopImg from "../assets/images/kite-shop-image.PNG";
 import adminImg from "../assets/images/admin.PNG";
 import kitchenImg from "../assets/images/kitchen.PNG";
 import arqImg from "../assets/images/ARQProjekt.PNG";
+import draggableNote from "../assets/images/draggable-note.PNG";
 
 export const initialDraggableList = [
   {
@@ -75,12 +76,38 @@ export const initialDraggableList = [
     id: 4,
     status: false,
     zIndex: 1000,
-    projectName: "Admin Panel",
+    projectName: "Draggable Note List",
     bounds: { left: 0, top: -1200, right: 985, bottom: -814 },
     boundsMedium: { left: 0, top: -1200, right: 785, bottom: -814 },
     boundsSmall: { left: 0, top: -1200, right: 535, bottom: -814 },
     defaultPosition: { x: 200, y: -985 },
     defaultPositionSmall: { x: 200, y: -985 },
+    minimalizeStatus: false,
+    projectImage: draggableNote,
+    wordpress: false,
+    buttonLive: "https://draggable-note-list.netlify.app/",
+    buttonGithub:
+      "https://github.com/JakubKomorowski/draggable-note-list_redux-typescript",
+    description:
+      "It is a simple draggable note list project. User can drag his note between columns that represents stages of the work process. It’s based on React Redux and TypeScript.",
+    skills: [
+      "React",
+      "Redux",
+      "TypeScript",
+      "Styled-Components",
+      "Material-UI",
+    ],
+  },
+  {
+    id: 5,
+    status: false,
+    zIndex: 1000,
+    projectName: "Admin Panel",
+    bounds: { left: 0, top: -1600, right: 985, bottom: -1214 },
+    boundsMedium: { left: 0, top: -1600, right: 785, bottom: -1214 },
+    boundsSmall: { left: 0, top: -1600, right: 535, bottom: -1214 },
+    defaultPosition: { x: 250, y: -1330 },
+    defaultPositionSmall: { x: 250, y: -1330 },
     minimalizeStatus: false,
     projectImage: adminImg,
     wordpress: false,
@@ -99,15 +126,15 @@ export const initialDraggableList = [
     ],
   },
   {
-    id: 5,
+    id: 6,
     status: false,
     zIndex: 1000,
     projectName: "ARQ Projekt",
-    bounds: { left: 0, top: -1600, right: 985, bottom: -1214 },
-    boundsMedium: { left: 0, top: -1600, right: 785, bottom: -1214 },
-    boundsSmall: { left: 0, top: -1600, right: 535, bottom: -1214 },
-    defaultPosition: { x: 250, y: -1330 },
-    defaultPositionSmall: { x: 250, y: -1330 },
+    bounds: { left: 0, top: -2000, right: 985, bottom: -1614 },
+    boundsMedium: { left: 0, top: -2000, right: 785, bottom: -1614 },
+    boundsSmall: { left: 0, top: -2000, right: 535, bottom: -1614 },
+    defaultPosition: { x: 300, y: -1675 },
+    defaultPositionSmall: { x: 300, y: -1675 },
     minimalizeStatus: false,
     projectImage: arqImg,
     wordpress: false,
@@ -115,7 +142,6 @@ export const initialDraggableList = [
     buttonGithub: "https://github.com/JakubKomorowski/arqprojekt-gatsby",
     description:
       "It is a commercial project built for the real-estate company. It's based on Gatsbyjs - an open-source frontend framework based on React. This framework is known for the good performance and SEO.",
-    adminPanel: true,
     skills: ["Gatsby", "Styled-Components", "DatoCMS", "GraphQL"],
   },
 ];
