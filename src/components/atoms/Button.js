@@ -32,7 +32,7 @@ const StyledButton = styled.button`
   ${({ intro }) =>
     intro &&
     css`
-      margin-right: ${(props) => (props.second ? "0px" : "50px")};
+      margin-right: ${({ second }) => (second ? "0px" : "50px")};
       margin-top: 40px;
       @media (max-width: 440px) {
         width: 100%;

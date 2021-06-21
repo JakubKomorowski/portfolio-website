@@ -67,10 +67,10 @@ const Projects = () => {
             >
               <SiGithub size={35} />
             </a>
-            {minimalize.map((el) => {
+            {minimalize.map(({ id, projectName }) => {
               return (
-                <MinimalizedWindow onClick={() => maximalizeWindow(el.id)}>
-                  <p>{el.projectName}</p>
+                <MinimalizedWindow onClick={() => maximalizeWindow(id)}>
+                  <p>{projectName}</p>
                 </MinimalizedWindow>
               );
             })}

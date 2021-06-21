@@ -38,7 +38,6 @@ const App = () => {
   const selectProject = (id) => {
     const filteredProject = draggableList.find((el) => el.id === id);
     setSelectedProject(filteredProject);
-    console.log(filteredProject);
   };
 
   const handleProjectsInfoModalOpen = () => {

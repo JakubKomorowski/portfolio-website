@@ -83,7 +83,7 @@ const DraggableComponent = () => {
                 scale={1}
               >
                 {minimalizeStatus ? (
-                  <MinimalizedContent></MinimalizedContent>
+                  <MinimalizedContent />
                 ) : (
                   <div
                     className={`draggable-block-container`}
@@ -98,7 +98,7 @@ const DraggableComponent = () => {
                           <StyledMinimalize
                             onClick={() => minimalizeWindow(id)}
                           >
-                            <StyledMinimalizeBar></StyledMinimalizeBar>
+                            <StyledMinimalizeBar />
                           </StyledMinimalize>
                           <StyledMaximalizeBox
                             onClick={() => {
@@ -125,7 +125,7 @@ const DraggableComponent = () => {
                       <StyledProjectImg src={projectImage} alt="" />
                       <ButtonsWrapper>
                         {wordpress ? (
-                          <EmptyButton></EmptyButton>
+                          <EmptyButton />
                         ) : (
                           <a
                             href={buttonGithub}
@@ -164,7 +164,7 @@ const DraggableComponent = () => {
 
                   <ButtonsWrapper>
                     {wordpress ? (
-                      <EmptyButton></EmptyButton>
+                      <EmptyButton />
                     ) : (
                       <a href={buttonGithub} target="_blank" rel="noreferrer">
                         <Button projects>Github</Button>
