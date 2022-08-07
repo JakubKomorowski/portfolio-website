@@ -25,6 +25,35 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
+const StyledH2 = styled.h2`
+  margin-bottom: 10px;
+`;
+
+const StyledH3 = styled.h3`
+  margin: 10px 0;
+`;
+
+const StyledStackWrapper = styled.div`
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  grid-gap: 10px;
+  max-width: 700px;
+`;
+
+const StyledStackItem = styled.p`
+  background-color: ${({ theme }) => theme.bgGray};
+  padding: 0.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  max-width: 200px;
+  font-size: 0.9rem;
+  &:first-of-type {
+    margin-left: 0;
+  }
+`;
+
 const ProjectsInfoModal = () => {
   const classes = useStyles();
 
@@ -36,35 +65,6 @@ const ProjectsInfoModal = () => {
   } = value;
 
   const { projectName, description, skills } = selectedProject;
-
-  const StyledH2 = styled.h2`
-    margin-bottom: 10px;
-  `;
-
-  const StyledH3 = styled.h3`
-    margin: 10px 0;
-  `;
-
-  const StyledStackWrapper = styled.div`
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-    grid-gap: 10px;
-    max-width: 700px;
-  `;
-
-  const StyledStackItem = styled.p`
-    background-color: ${({ theme }) => theme.bgGray};
-    padding: 0.2rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    max-width: 200px;
-    font-size: 0.9rem;
-    &:first-of-type {
-      margin-left: 0;
-    }
-  `;
 
   return (
     <div>

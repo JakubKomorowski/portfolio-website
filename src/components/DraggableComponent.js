@@ -60,7 +60,7 @@ const DraggableComponent = () => {
           wordpress,
         } = item;
         return (
-          <>
+          <div key={id}>
             {windowSize > breakPointSmall ? (
               <Draggable
                 onStart={() => startDraggableList(id)}
@@ -178,7 +178,7 @@ const DraggableComponent = () => {
                 </StyledContent>
               </StyledWindowWrapper>
             )}
-          </>
+          </div>
         );
       })}
     </>

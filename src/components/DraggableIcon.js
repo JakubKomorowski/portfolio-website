@@ -71,7 +71,8 @@ const DraggableIcon = () => {
           width={windowSize > breakPointBig ? 1200 : 800}
           isResizable={false}
           preventCollision={true}
-          verticalCompact={false}
+          // verticalCompact={false}
+          compactType={null}
           autoSize={false}
           isBounded={true}
         >
