@@ -3,24 +3,6 @@ import RGL, { WidthProvider } from "react-grid-layout";
 import "../../node_modules/react-grid-layout/css/styles.css";
 import "../../node_modules/react-resizable/css/styles.css";
 import styled from "styled-components";
-import { FaReact } from "react-icons/fa";
-import {
-  SiRedux,
-  SiJavascript,
-  SiGatsby,
-  SiGraphql,
-  SiMaterialUi,
-  SiFigma,
-  SiStyledComponents,
-  SiFirebase,
-  SiAdobeillustrator,
-  SiGithub,
-  SiTypescript,
-} from "react-icons/si";
-import { AiFillHtml5, AiFillDatabase } from "react-icons/ai";
-import { DiCss3 } from "react-icons/di";
-import { FaWordpress } from "react-icons/fa";
-import { BsGraphUp, BsFillGearFill } from "react-icons/bs";
 import "./styledComponents/icons.css";
 import { useContext } from "react";
 import Context from "../context";
@@ -33,6 +15,9 @@ const IconWrapper = styled.div`
   align-items: center;
   justify-content: center;
   cursor: grab;
+  &:active {
+    cursor: grabbing;
+  }
   @media (max-width: 1100px) {
     margin: 20px;
   }
@@ -71,174 +56,29 @@ const DraggableIcon = () => {
           width={windowSize > breakPointBig ? 1200 : 800}
           isResizable={false}
           preventCollision={true}
-          // verticalCompact={false}
           compactType={null}
           autoSize={false}
           isBounded={true}
         >
-          <IconWrapper key="JS">
-            <SiJavascript size={70} />
-            <IconName>JS</IconName>
-          </IconWrapper>
-          <IconWrapper key="React">
-            <FaReact size={70} />
-            <IconName>React</IconName>
-          </IconWrapper>
-          <IconWrapper key="Redux">
-            <SiRedux size={70} />
-            <IconName>Redux</IconName>
-          </IconWrapper>
-          <IconWrapper key="HTML">
-            <AiFillHtml5 size={70} />
-            <IconName>HTML</IconName>
-          </IconWrapper>
-          <IconWrapper key="CSS">
-            <DiCss3 size={70} />
-            <IconName>CSS</IconName>
-          </IconWrapper>
-          <IconWrapper key="Gatsby">
-            <SiGatsby size={70} />
-            <IconName>Gatsby</IconName>
-          </IconWrapper>
-          <IconWrapper key="GraphQL">
-            <SiGraphql size={70} />
-            <IconName>GraphQL</IconName>
-          </IconWrapper>
-          <IconWrapper key="Material">
-            <SiMaterialUi size={70} />
-            <IconName>
-              Material
-              <br />
-              UI
-            </IconName>
-          </IconWrapper>
-          <IconWrapper key="Figma">
-            <SiFigma size={70} />
-            <IconName>Figma</IconName>
-          </IconWrapper>
-          <IconWrapper key="styled-components">
-            <SiStyledComponents size={70} />
-            <IconName>
-              Styled
-              <br />
-              Components
-            </IconName>
-          </IconWrapper>
-          <IconWrapper key="Wordpress">
-            <FaWordpress size={70} />
-            <IconName>Wordpress</IconName>
-          </IconWrapper>
-          <IconWrapper key="Firebase">
-            <SiFirebase size={70} />
-            <IconName>Firebase</IconName>
-          </IconWrapper>
-          <IconWrapper key="SEO">
-            <BsGraphUp size={70} />
-            <IconName>SEO</IconName>
-          </IconWrapper>
-          <IconWrapper key="Illustrator">
-            <SiAdobeillustrator size={70} />
-            <IconName>Illustrator</IconName>
-          </IconWrapper>
-          <IconWrapper key="rest-api">
-            <BsFillGearFill size={70} />
-            <IconName>REST API</IconName>
-          </IconWrapper>
-          <IconWrapper key="Contentful">
-            <AiFillDatabase size={70} />
-            <IconName>Contentful</IconName>
-          </IconWrapper>
-          <IconWrapper key="Typescript">
-            <SiTypescript size={70} />
-            <IconName>TypeScript</IconName>
-          </IconWrapper>
-          <IconWrapper key="Git">
-            <SiGithub size={70} />
-            <IconName>Git</IconName>
-          </IconWrapper>
+          {layout.map((item) => {
+            return (
+              <IconWrapper key={item.i}>
+                {item.icon}
+                <IconName>{item.i}</IconName>
+              </IconWrapper>
+            );
+          })}
         </GridLayout>
       ) : (
         <IconsWrapper>
-          <IconWrapper key="JS">
-            <SiJavascript size={70} />
-            <IconName>JS</IconName>
-          </IconWrapper>
-          <IconWrapper key="React">
-            <FaReact size={70} />
-            <IconName>React</IconName>
-          </IconWrapper>
-          <IconWrapper key="Redux">
-            <SiRedux size={70} />
-            <IconName>Redux</IconName>
-          </IconWrapper>
-          <IconWrapper key="HTML">
-            <AiFillHtml5 size={70} />
-            <IconName>HTML</IconName>
-          </IconWrapper>
-          <IconWrapper key="CSS">
-            <DiCss3 size={70} />
-            <IconName>CSS</IconName>
-          </IconWrapper>
-          <IconWrapper key="Gatsby">
-            <SiGatsby size={70} />
-            <IconName>Gatsby</IconName>
-          </IconWrapper>
-          <IconWrapper key="GraphQL">
-            <SiGraphql size={70} />
-            <IconName>GraphQL</IconName>
-          </IconWrapper>
-          <IconWrapper key="Material">
-            <SiMaterialUi size={70} />
-            <IconName>
-              Material
-              <br />
-              UI
-            </IconName>
-          </IconWrapper>
-          <IconWrapper key="Figma">
-            <SiFigma size={70} />
-            <IconName>Figma</IconName>
-          </IconWrapper>
-          <IconWrapper key="styled-components">
-            <SiStyledComponents size={70} />
-            <IconName>
-              Styled
-              <br />
-              Components
-            </IconName>
-          </IconWrapper>
-          <IconWrapper key="Wordpress">
-            <FaWordpress size={70} />
-            <IconName>Wordpress</IconName>
-          </IconWrapper>
-          <IconWrapper key="Firebase">
-            <SiFirebase size={70} />
-            <IconName>Firebase</IconName>
-          </IconWrapper>
-          <IconWrapper key="SEO">
-            <BsGraphUp size={70} />
-            <IconName>SEO</IconName>
-          </IconWrapper>
-          <IconWrapper key="Illustrator">
-            <SiAdobeillustrator size={70} />
-            <IconName>Illustrator</IconName>
-          </IconWrapper>
-          <IconWrapper key="rest-api">
-            <BsFillGearFill size={70} />
-            <IconName>REST API</IconName>
-          </IconWrapper>
-          <IconWrapper key="Contentful">
-            <AiFillDatabase size={70} />
-            <IconName>Contentful</IconName>
-          </IconWrapper>
-          <IconWrapper key="Typescript">
-            <SiTypescript size={70} />
-            <IconName>Typescript</IconName>
-          </IconWrapper>
-          <IconWrapper key="Git">
-            <SiGithub size={70} />
-            <IconName>Git</IconName>
-          </IconWrapper>
+          {layoutSmall.map((item) => {
+            return (
+              <IconWrapper key={item.i}>
+                {item.icon}
+                <IconName>{item.i}</IconName>
+              </IconWrapper>
+            );
+          })}
         </IconsWrapper>
       )}
     </>

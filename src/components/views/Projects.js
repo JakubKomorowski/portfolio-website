@@ -69,7 +69,10 @@ const Projects = () => {
             </a>
             {minimalize.map(({ id, projectName }) => {
               return (
-                <MinimalizedWindow onClick={() => maximalizeWindow(id)}>
+                <MinimalizedWindow
+                  onClick={() => maximalizeWindow(id)}
+                  key={id}
+                >
                   <p>{projectName}</p>
                 </MinimalizedWindow>
               );

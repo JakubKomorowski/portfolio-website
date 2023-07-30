@@ -29,6 +29,9 @@ export const StyledBar = styled.div`
   z-index: 10;
   position: relative;
   cursor: grab;
+  &:active {
+    cursor: grabbing;
+  }
   @media (max-width: 1100px) {
     cursor: auto;
   }

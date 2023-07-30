@@ -105,23 +105,4 @@ export const initialDraggableList = [
       "Material-UI",
     ],
   },
-  {
-    id: 6,
-    status: false,
-    zIndex: 1000,
-    projectName: "ARQ Projekt",
-    bounds: { left: 0, top: -1600, right: 985, bottom: -1214 },
-    boundsMedium: { left: 0, top: -1600, right: 785, bottom: -1214 },
-    boundsSmall: { left: 0, top: -1600, right: 535, bottom: -1214 },
-    defaultPosition: { x: 250, y: -1330 },
-    defaultPositionSmall: { x: 250, y: -1330 },
-    minimalizeStatus: false,
-    projectImage: arqImg,
-    wordpress: false,
-    buttonLive: "https://arqprojekt.pl/",
-    buttonGithub: "https://github.com/JakubKomorowski/arqprojekt-gatsby",
-    description:
-      "It is a commercial project built for the real-estate company. It's based on Gatsbyjs - an open-source frontend framework based on React. This framework is known for the good performance and SEO.",
-    skills: ["Gatsby", "Styled-Components", "DatoCMS", "GraphQL"],
-  },
 ];
