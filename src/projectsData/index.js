@@ -1,7 +1,6 @@
 import huntingImg from "../assets/images/hunting.PNG";
 import kiteShopImg from "../assets/images/kite-shop-image.PNG";
 import adminImg from "../assets/images/admin.PNG";
-import arqImg from "../assets/images/ARQProjekt.PNG";
 import draggableNote from "../assets/images/draggable-note.PNG";
 
 export const initialDraggableList = [
