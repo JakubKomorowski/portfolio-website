@@ -1,10 +1,8 @@
 import React, { useContext } from "react";
-import { makeStyles } from "@material-ui/core/styles";
-import Modal from "@material-ui/core/Modal";
-import Backdrop from "@material-ui/core/Backdrop";
-import Fade from "@material-ui/core/Fade";
+import { Modal, Fade } from "@mui/material";
 import Context from "../context";
 import styled from "styled-components";
+import { makeStyles } from "@mui/styles";
 
 const useStyles = makeStyles((theme) => ({
   modal: {
@@ -13,7 +11,7 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: "center",
   },
   paper: {
-    backgroundColor: theme.palette.background.paper,
+    backgroundColor: "white",
     border: "4px solid #000",
     boxShadow: theme.shadows[5],
     padding: theme.spacing(2, 4, 3),
@@ -41,7 +39,7 @@ const StyledStackWrapper = styled.div`
 `;
 
 const StyledStackItem = styled.p`
-  background-color: ${({ theme }) => theme.bgGray};
+  background-color: #e5e5e5;
   padding: 0.2rem;
   display: flex;
   align-items: center;
@@ -75,10 +73,6 @@ const ProjectsInfoModal = () => {
         open={openProjectsInfoModal}
         onClose={handleProjectsInfoModalClose}
         closeAfterTransition
-        BackdropComponent={Backdrop}
-        BackdropProps={{
-          timeout: 500,
-        }}
       >
         <Fade in={openProjectsInfoModal}>
           <div className={classes.paper}>

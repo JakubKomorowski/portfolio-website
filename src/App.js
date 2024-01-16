@@ -2,18 +2,30 @@ import React, { useState, useEffect } from "react";
 import Intro from "./components/views/Intro";
 import Projects from "./components//views/Projects";
 import GlobalStyle from "./theme/GlobalStyle";
-import styled, { ThemeProvider } from "styled-components";
+import styled from "styled-components";
 import Context from "./context";
 import { initialDraggableList } from "./projectsData";
 import Skills from "./components/views/Skills";
 import Navbar from "./components/nav/Navbar";
 import Contact from "./components/views/Contact";
 import Footer from "./components/nav/Footer";
-import { theme } from "./theme/theme";
+import { ThemeProvider, createTheme } from "@mui/material";
+import { green, purple } from "@mui/material/colors";
 
 const Wrapper = styled.div`
   overflow-x: hidden;
 `;
+
+const theme = createTheme({
+  palette: {
+    primary: {
+      main: purple[500],
+    },
+    secondary: {
+      main: green[500],
+    },
+  },
+});
 
 const App = () => {
   const [draggableList, setDraggableList] = useState([...initialDraggableList]);

@@ -79,7 +79,6 @@ const DraggableComponent = () => {
                     ? boundsMedium
                     : boundsSmall
                 }
-                // positionOffset={defaultPosition}
                 scale={1}
               >
                 {minimalizeStatus ? (

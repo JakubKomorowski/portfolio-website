@@ -1,10 +1,8 @@
 import React, { useContext } from "react";
-import { makeStyles } from "@material-ui/core/styles";
-import Modal from "@material-ui/core/Modal";
-import Backdrop from "@material-ui/core/Backdrop";
-import Fade from "@material-ui/core/Fade";
+import { Modal, Fade } from "@mui/material";
 import Context from "../context";
 import styled from "styled-components";
+import { makeStyles } from "@mui/styles";
 
 const useStyles = makeStyles((theme) => ({
   modal: {
@@ -14,7 +12,6 @@ const useStyles = makeStyles((theme) => ({
   },
   paper: {
     backgroundColor: theme.palette.background.paper,
-
     border: "none",
     outline: "none",
     boxShadow: theme.shadows[5],
@@ -50,10 +47,6 @@ const ProjectsLiveModal = () => {
         open={openProjectsLiveModal}
         onClose={handleProjectsLiveModalClose}
         closeAfterTransition
-        BackdropComponent={Backdrop}
-        BackdropProps={{
-          timeout: 500,
-        }}
       >
         <Fade in={openProjectsLiveModal}>
           <IFrameWrapper className={classes.paper}>

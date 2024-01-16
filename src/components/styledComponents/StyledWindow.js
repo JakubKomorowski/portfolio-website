@@ -25,7 +25,7 @@ export const StyledBar = styled.div`
   border-top: 6px solid black;
   display: flex;
   align-items: center;
-  background-color: ${({ theme }) => theme.bgGray};
+  background-color: #e5e5e5;
   z-index: 10;
   position: relative;
   cursor: grab;

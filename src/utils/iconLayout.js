@@ -3,15 +3,15 @@ import {
   SiJavascript,
   SiGatsby,
   SiGraphql,
-  SiMaterialUi,
+  SiMui,
   SiFigma,
-  SiStyledComponents,
+  SiStyledcomponents,
   SiAdobeillustrator,
   SiGithub,
   SiTypescript,
-  SiNextDotJs,
 } from "react-icons/si";
 import { AiFillHtml5, AiFillDatabase } from "react-icons/ai";
+import { TbBrandNextjs } from "react-icons/tb";
 import { DiCss3 } from "react-icons/di";
 import { FaWordpress, FaReact } from "react-icons/fa";
 import { BsGraphUp, BsFillGearFill } from "react-icons/bs";
@@ -31,18 +31,18 @@ export const layout = [
     h: 1,
   },
   { i: "GraphQL", icon: <SiGraphql size={70} />, x: 8, y: 2, w: 1, h: 1 },
-  { i: "Material", icon: <SiMaterialUi size={70} />, x: 2, y: 2, w: 1, h: 1 },
+  { i: "Material", icon: <SiMui size={70} />, x: 2, y: 2, w: 1, h: 1 },
   { i: "Figma", icon: <SiFigma size={70} />, x: 5, y: 5, w: 1, h: 1 },
   {
     i: "styled-components",
-    icon: <SiStyledComponents size={70} />,
+    icon: <SiStyledcomponents size={70} />,
     x: 3,
     y: 3,
     w: 1,
     h: 1,
   },
   { i: "Wordpress", icon: <FaWordpress size={70} />, x: 11, y: 0, w: 1, h: 1 },
-  { i: "Next", icon: <SiNextDotJs size={70} />, x: 7, y: 3, w: 1, h: 1 },
+  { i: "Next", icon: <TbBrandNextjs size={70} />, x: 7, y: 3, w: 1, h: 1 },
   { i: "Gatsby", icon: <SiGatsby size={70} />, x: 6, y: 4, w: 1, h: 1 },
   { i: "Git", icon: <SiGithub />, x: 4, y: 4, w: 1, h: 1 },
   {
@@ -72,18 +72,18 @@ export const layoutSmall = [
   { i: "CSS", icon: <DiCss3 size={70} />, x: 0, y: 1, w: 1, h: 1 },
   { i: "Typescript", icon: <SiTypescript size={70} />, x: 5, y: 0, w: 1, h: 1 },
   { i: "GraphQL", icon: <SiGraphql size={70} />, x: 6, y: 2, w: 1, h: 1 },
-  { i: "Material", icon: <SiMaterialUi size={70} />, x: 0, y: 2, w: 1, h: 1 },
+  { i: "Material", icon: <SiMui size={70} />, x: 0, y: 2, w: 1, h: 1 },
   { i: "Figma", icon: <SiFigma size={70} />, x: 3, y: 5, w: 1, h: 1 },
   {
     i: "styled-components",
-    icon: <SiStyledComponents size={70} />,
+    icon: <SiStyledcomponents size={70} />,
     x: 1,
     y: 3,
     w: 1,
     h: 1,
   },
   { i: "Wordpress", icon: <FaWordpress size={70} />, x: 7, y: 4, w: 1, h: 1 },
-  { i: "Next", icon: <SiNextDotJs size={70} />, x: 5, y: 3, w: 1, h: 1 },
+  { i: "Next", icon: <TbBrandNextjs size={70} />, x: 5, y: 3, w: 1, h: 1 },
   { i: "Gatsby", icon: <SiGatsby size={70} />, x: 4, y: 4, w: 1, h: 1 },
   { i: "Git", icon: <SiGithub size={70} />, x: 2, y: 4, w: 1, h: 1 },
   {
