@@ -8,6 +8,7 @@ import { useContext } from "react";
 import Context from "../context";
 import { breakPointBig, breakPointSmall } from "../utils/windowBreakPoints";
 import { layout, layoutSmall } from "../utils/iconLayout";
+import { grey } from "@mui/material/colors";
 
 const IconWrapper = styled.div`
   display: flex;
@@ -24,7 +25,7 @@ const IconWrapper = styled.div`
 `;
 
 const IconName = styled.p`
-  background-color: #e5e5e5;
+  background-color: ${grey[200]};
   padding: 1px 6px;
   margin-top: 5px;
   text-align: center;
@@ -58,7 +59,6 @@ const DraggableIcon = () => {
           preventCollision={true}
           compactType={null}
           autoSize={false}
-          isBounded={true}
         >
           {layout.map((item) => {
             return (

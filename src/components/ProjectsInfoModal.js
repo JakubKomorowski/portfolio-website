@@ -3,6 +3,7 @@ import { Modal, Fade } from "@mui/material";
 import Context from "../context";
 import styled from "styled-components";
 import { makeStyles } from "@mui/styles";
+import { grey } from "@mui/material/colors";
 
 const useStyles = makeStyles((theme) => ({
   modal: {
@@ -39,7 +40,7 @@ const StyledStackWrapper = styled.div`
 `;
 
 const StyledStackItem = styled.p`
-  background-color: #e5e5e5;
+  background-color: ${grey[200]};
   padding: 0.2rem;
   display: flex;
   align-items: center;

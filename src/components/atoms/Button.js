@@ -1,9 +1,10 @@
 import React from "react";
 import styled, { css } from "styled-components";
+import { grey } from "@mui/material/colors";
 
 const StyledButton = styled.button`
   padding: 0.5em 2em;
-  background-color: ${({ theme }) => theme.bgGray};
+  background-color: ${grey[200]};
   border: 3px solid black;
   font-size: 1.1rem;
   font-family: "Fira Code", monospace;
@@ -11,7 +12,7 @@ const StyledButton = styled.button`
   font-weight: 700;
 
   &:hover {
-    background-color: ${({ theme }) => theme.hoverGray};
+    background-color: ${grey[300]};
   }
   a {
     color: black;

@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { grey } from "@mui/material/colors";
 
 export const StyledNavbar = styled.nav`
   display: flex;
@@ -8,7 +9,7 @@ export const StyledNavbar = styled.nav`
   height: 3rem;
   box-sizing: content-box;
   position: fixed;
-  background-color: #e5e5e5;
+  background-color: ${grey[200]};
   z-index: 2000;
 
   @media (max-width: 700px) {
@@ -28,7 +29,7 @@ export const StyledUl = styled.ul`
   display: flex;
 
   @media (max-width: 700px) {
-    background-color: #e5e5e5;
+    background-color: ${grey[200]};
     height: 50px;
     position: fixed;
     width: 100%;
