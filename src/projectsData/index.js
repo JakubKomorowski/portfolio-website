@@ -1,5 +1,3 @@
-import huntingImg from "../assets/images/hunting.PNG";
-import kiteShopImg from "../assets/images/kite-shop-image.PNG";
 import adminImg from "../assets/images/admin.PNG";
 import trustcatcherImg from "../assets/images/trustcatcher.PNG";
 import padsImg from "../assets/images/pads.PNG";
