@@ -61,10 +61,9 @@ export const initialDraggableList = [
     defaultPositionSmall: { x: 150, y: -640 },
     minimalizeStatus: false,
     projectImage: trustcatcherImg,
-    wordpress: true,
+    wordpress: false,
     buttonLive: "https://www.trustcatcher.com/",
-    // buttonGithub:
-    //   "https://github.com/JakubKomorowski/draggable-note-list_redux-typescript",
+    buttonGithub: "https://github.com/JakubKomorowski/testimonials",
     description:
       "I'm during the development of SaaS project that will help webmasters to collect, manage and publish customer's testimonials",
     skills: ["Next", "Firebase", "TypeScript", "Tailwind", "Stripe", "Sanity"],
